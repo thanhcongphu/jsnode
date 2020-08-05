@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %>></title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap337/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ass13.css"/>
+</head>
+<body>
+    <h1>So luot nguoi xem la : <%= counter %></h1>
+    <section class="section">
+        <div class="container">
+            <div id="wea">
+<!--                <div class="col-md-3">-->
+<!--                    <div class="post">-->
+<!--                    <div class="time col-md-12">-->
+<!--                        2020-07-27 15:00:00-->
+<!--                    </div>-->
+<!--                    <div class="temp col-md-7">-->
+<!--                        27.69 oC-->
+<!--                    </div>-->
+<!--                    <div class="icon col-md-5">-->
+<!--                        <img width="100" height="100" src="http://openweathermap.org/img/wn/04n@2x.png">-->
+<!--                    </div>-->
+<!--                    <div class="des col-md-12">-->
+<!--                        clouds-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        var b = [];
+        $.ajax({
+            url: "http://api.openweathermap.org/data/2.5/forecast",
+            method: "GET",
+            data:{
+                q:"Hanoi,vietnam",
+                appid: "09a71427c59d38d6a34f89b47d75975c",
+                units: "metric"
+            },
+            success: function (rs){
+                let l = rs.list;
+                for (let i of l){
+                    let icon = "http://openweathermap.org/img/wn/"+i.weather[0].icon+"@2x.png";
+                    let sp = "<div class=\"col-md-3\">\n" +
+                        "                    <div class=\"post\">\n" +
+                        "                    <div class=\"time col-md-12\">\n" +
+                        "                        "+i.dt_txt+"\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"temp col-md-7\">\n" +
+                        "                        "+i.main.temp+" oC\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"icon col-md-5\">\n" +
+                        "                        <img width=\"100\" height=\"100\" src=\""+icon+"\">\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"des col-md-12\">\n" +
+                        "                        "+i.weather[0].description+"\n" +
+                        "                    </div>\n" +
+                        "                    </div>\n" +
+                        "                </div>";
+                    $("#wea").append(sp);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

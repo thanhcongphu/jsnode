@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Điện thoại",
+    "image": "/imgs/fpt.dien-thoai.png",
+    "link": "dienthoai.html"
+  },
+  {
+    "id": 2,
+    "name": "Laptop",
+    "image": "/imgs/fpt.laptop.png",
+    "link": "laptop.html"
+  },
+  {
+    "id": 3,
+    "name": "Apple",
+    "image": "/imgs/fpt.apple.png",
+    "link": "apple.html"
+  },
+  {
+    "id": 4,
+    "name": "Máy tính bảng",
+    "image": "/imgs/fpt.tablet.png",
+    "link": "maytinhbang.html"
+  },
+  {
+    "id": 5,
+    "name": "Đồng hồ thông minh",
+    "image": "/imgs/fpt.smart-watch.png",
+    "link": "dongho.html"
+  },
+  {
+    "id": 6,
+    "name": "Ốp lưng điện thoại",
+    "image": "/imgs/fpt.op-lung.png",
+    "link": "oplung.html"
+  },
+  {
+    "id": 7,
+    "name": "Tai nghe",
+    "image": "/imgs/fpt.tai-nghe.png",
+    "link": "tainghe.html"
+  },
+  {
+    "id": 8,
+    "name": "Thẻ nhớ",
+    "image": "/imgs/fpt.the-nho.png",
+    "link": "thenho.html"
+  },
+  {
+    "id": 9,
+    "name": "Loa nghe nhạc",
+    "image": "/imgs/fpt.loa-nghe-nhac.png",
+    "link": "loa.html"
+  },
+  {
+    "id": 10,
+    "name": "Sạc cáp",
+    "image": "/imgs/fpt.cap-sac.png",
+    "link": "capsac.html"
+  },
+  {
+    "id": 11,
+    "name": "Máy tính để bàn",
+    "image": "/imgs/fpt.may-tinh-de-ban.png",
+    "link": "pc.html"
+  },
+  {
+    "id": 12,
+    "name": "Máy in",
+    "image": "/imgs/fpt.may-in.png",
+    "link": "mayin.html"
+  }
+]

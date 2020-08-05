@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('head.ejs'); %>
+<body>
+   <section class="section">
+       <div class="container">
+           <div id="sanpham">
+               <% cats.map(function (e) { %>
+                   <a href="/chitiet/<%=e.id%>"><div class="product">
+                       <div class="cover">
+                           <div class="image">
+                               <img src="<%=e.image%>">
+                           </div>
+                       </div>
+                       <div class="text">
+                           <p><%=e.name%></p>
+                       </div>
+                   </div></a>
+               <% }) %>
+           </div>
+       </div>
+   </section>
+<!--    <script type="text/javascript">-->
+<!--        cats.map(function (c) {-->
+<!--            var product = "<a href=\""+c.link+"\"><div class=\"product\">\n" +-->
+<!--                "               <div class=\"cover\">\n" +-->
+<!--                "                   <div class=\"image\">\n" +-->
+<!--                "                       <img src=\""+c.image+"\">\n" +-->
+<!--                "                   </div>\n" +-->
+<!--                "               </div>\n" +-->
+<!--                "               <div class=\"text\">\n" +-->
+<!--                "                   <p>"+c.name+"</p>\n" +-->
+<!--                "               </div>\n" +-->
+<!--                "           </div></a>";-->
+<!--            document.getElementById("sanpham").innerHTML+=product;-->
+<!--        });-->
+<!--    </script>-->
+</body>
+</html>

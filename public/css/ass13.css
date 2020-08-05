@@ -1,0 +1,29 @@
+body{
+    background-image: url(../imgs/sky.jpg);
+    background-size: cover;
+}
+.post{
+    float: left;
+    background-color: #e5e5e590;
+    margin: 10px auto;
+}
+.post .time{
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.post .temp{
+    float: left;
+    font-size: 30px;
+    color: white;
+    padding : 10px;
+}
+.post .icon{
+    float: left;
+}
+.post .des{
+    float: left;
+    padding: 10px;
+    color: white
+}
+

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.section #sanpham{
+    margin-top: 50px;
+    width: 100%;
+    box-shadow: 0 0 1px darkgrey;
+}
+.section .product{
+    float: left;
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 0 0.1px lightgray;
+    padding: 10px;
+}
+.section .cover{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: lightgray;
+    padding: 20px;
+}
+.section .image img{
+    height: 60px;
+    width: 60px;
+}
+.section .text{
+    width: 160px;
+    margin: 10px auto;
+    text-align: center;
+}
+.section .text p{
+    text-decoration: none;
+    color: black;
+}
+.section .product:hover{
+    box-shadow: 0 0 25px darkgrey;
+}
+.section .product:hover .cover{
+    transform: scale(1.08);
+}
