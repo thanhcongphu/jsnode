@@ -36,6 +36,7 @@ app.get("/chitiet/:ct",function (req,res){
     cats=JSON.parse(cats);
     let count = 0
     cats.map(e=>{
+        count++;
         if(e.id == a){
           res.render("chitiet",{
              cat : e
